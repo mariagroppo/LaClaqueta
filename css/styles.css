@@ -1,0 +1,348 @@
+* {
+    font-family: 'Alegreya Sans', sans-serif;
+    color: white;
+}
+
+body {
+    background: #160032;
+}
+
+/* SUSRIBE BUTTON ----------------------------------------------------- */
+.swalTitle{
+    background: white;
+}
+
+/* NAV ----------------------------------------------------------------------------- */
+.container {
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background: #160032;
+    color: white;
+    padding: 1em 0;
+    position: relative;
+    box-shadow: 7px 7px 20px 0 rgb(75, 74, 74);
+}
+
+header::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.logo {
+    /* float: left; */
+    width: 120px;
+    /* font-size: 1rem; */
+    margin: 0;
+    padding: 0;
+    /* text-transform: uppercase;
+    font-weight: 700; */
+}
+
+.site_nav {
+    top:100%;
+    right: 0;
+    position: absolute;
+    background: #78004E;
+    color: white;
+    /* height: 0;
+    overflow: hidden; */
+    clip-path: circle(0% at top right);
+    transition: clip-path ease-in-out 700ms;
+}
+
+.site-nav-open{
+    clip-path: circle(150% at top right);
+}
+
+.site_nav ul {
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+.site_nav li {
+    box-shadow: 2px 2px 5px 0 rgb(203, 196, 196);
+}
+
+.site_nav a {
+    color: white;
+    display: block;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.site_nav a:hover,
+.site_nav a:focus {
+    background: yellow;
+    color: black;
+}
+
+.menu-movil{
+    padding: 1em;
+    position: absolute;
+    top: 40px;
+    right: .5em;
+    /* background: red; */
+}
+
+.movil_icon,
+.movil_icon::before,
+.movil_icon::after{
+    content: '';
+    display: block;
+    background: #ebebd3;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+    transition: all ease-in-out 500ms;
+}
+
+.movil_icon::before{
+    transform: translateY(-6px);
+}
+
+.movil_icon::after{
+    transform: translateY(3px);
+}
+
+.iconClass {
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 1em;
+    width: 1.1em;
+    text-align: right;
+    color: white;
+}
+
+/* detalle pelicula --------------------------------------------------- */
+.btnBook{
+    border: 1px solid #2e518b;
+    /* margin-left: 30px; */
+    padding: 10px;
+    background-color: #2e518b;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+
+.btnLayout2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filmImage{
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    margin: 10px;
+
+}
+
+.spanClass{
+    border-style: solid;
+    border-color: white;
+    padding: 5px;
+    margin: 10px
+}
+
+.container-title {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.infoFilm{
+    font-weight: bolder;
+}
+
+.container-video{
+    display: flex;
+    justify-content: center;
+}
+
+.container-info{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.imgForm button{
+    width: 100%;
+    align-items: center;
+}
+
+.bookForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.bookForm_1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.ticketsQty input{
+    width: 30px;
+    text-align: center;
+    color: white;
+}
+
+.ticketsQty label{
+    padding-right: 10px;
+}
+
+.ticketsQty, .dayTime {
+    font-weight: bolder;
+    margin: 10px
+}
+
+.ticketsQty {
+    display: flex;
+    flex-direction: row;
+}
+
+.ticketsQty1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.dayTime label{
+    padding-right: 10px;
+}
+
+.dayTime select, .ticketsQty input {
+    background: rgb(73, 72, 72);
+}
+
+.btnRest, .btnSum {
+    background: #78004E
+}
+
+.qtyInput {
+    color: white;
+}
+
+.capa1{
+    z-index: 1000;
+}
+
+.capa2{
+    z-index: 0;
+}
+
+.spanTickets {
+    font-size: 10px;
+}
+
+/* PANTALLA CHICA -------------------------- */
+@media (max-width: 430px) {
+    /* DETALLE DE PELICULA -------------------------------------------- */
+
+    .layout2{
+        display: none;
+    }
+    
+    .containerFilm{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    
+    .container-video{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .filmImage {
+        width: 150px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+        margin: 10px;
+    }
+}
+
+
+/* PANTALLA GRANDE --------------------------------------------- */
+@media (min-width: 430px) {
+
+    /* DETALLE PELICULA --------------- */
+    .layout1{
+        display: none;
+    }
+
+    .layout2 {
+        display: block;
+    }
+
+    .container-img{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .filmImage {
+        width: 300px;
+    }
+
+}
+
+@media (min-width:810px) {
+    /* NAV BAR -------------------------------- */
+    .menu-movil{
+        display: none;
+    }
+    
+    .containerHeader {
+        /* z-index: 1000; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .site_nav {
+        height: auto;
+        position: relative;
+        background: transparent;
+        float: right;
+        margin-right: 30px;
+        clip-path: initial;
+    }
+
+    .site_nav li {
+        display: inline-block;
+        border: none;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .site_nav a {
+        padding: 0;
+        margin-left: 3em;
+    }
+
+    .iconClass {
+        display: none;
+    }
+
+    .site_nav a:hover,
+    .site_nav a:focus {
+        background: transparent;
+    }
+    
+}
+

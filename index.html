@@ -1,0 +1,104 @@
+<!-- Navbar responsive con menu simple y uso de iconos -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Claqueta</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <header class="capa1">
+        <div id="contenidoHeader">
+            <script>load_header()</script>
+        </div>
+    </header>
+    <section class="capa2">
+      <div id="carouselExampleInterval" class="carousel slide carousel-fade carouselCapa" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="8000">
+              <img src="./img/when Harry met Sally.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="8000">
+              <img src="./img/descuentos.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="8000">
+              <img src="./img/Imagen1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="8000">
+              <img src="./img/Imagen2.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-section">
+          <div class="container">
+            
+            <div class="d-flex row">
+                <div class="col-md-3">
+                    <p class="footer-title"><span class="footer-title-text">Quick Links</span></p>
+                    <ul class="quick-link-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Cartelera</a></li>
+                        <li><a href="contactUs.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <p class="footer-title">Sobre nosotros</p>
+                    <p>Somos un grupo de apacionados por el cine, que decidió compatir los mejores momentos del cine con vos y que los disfrtes en una sala de cine en lugar de tu casa.</p>
+                    <div id="social">
+                      <img src="./img/facebook.png" alt="" class="facebookBtn smGlobalBtn">
+                      <img src="./img/twitter.png" alt="" class="twitterBtn smGlobalBtn">  
+                      <img src="./img/linkedin.png" alt="" class="linkedinBtn smGlobalBtn">
+                      <img src="./img/instagram.png" alt="" class="instagramBtn smGlobalBtn">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <p class="footer-title"><span class="footer-title-text">NEWSLETTER</span></p>
+                    <p class="newsletter">Inscribete en nuestro newsletter.</p>
+                    <div class="form-group">
+                        <input type="email" class="form-control form-control-new" id="username" name="username" placeholder="Enter Your Mail" required>
+                      </div>
+                      <button type="button" onclick="suscribeFunction()" id="suscribeBtn" class="btn btn-primary subscribe">Suscribirme.</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer-section-bottom">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-6 footer-bottom-left">
+                    <p>© All Rights Reserved Python Group 11.</p>
+                </div>
+                <div class="col-md-6 footer-bottom-right">
+                    <p>Developed by <a href="#">Python Group 11.</a></p>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

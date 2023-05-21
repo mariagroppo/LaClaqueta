@@ -1,0 +1,90 @@
+.contactFormTitle{
+    margin: 20px;
+}
+
+.formContactContainer{
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border:solid 1px white;
+}
+
+.contacInfo1, .contacInfo1_1{
+    display: flex;
+    flex-direction: column;
+}
+
+#nombre, #apellido, #email, #mensaje, .terminos {
+    margin: 10px;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario span{
+    font-size: 10px;
+}
+
+.contactFormBtn {
+    display: flex;
+    justify-content: center;
+}
+
+#enviar{
+    background-color: #EAC300;
+    color: rgb(17, 16, 16);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+@media (min-width: 590px) {
+    .contacInfo1_1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    .contactInfo1_1_1{
+        display: block;
+    }
+
+    .contacInfo1_2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    #nombre, #apellido, #email, #mensaje{
+        min-width: 280px;
+        color: black;
+    }
+
+    #formulario button{
+        width: 200px;
+    }
+}
+
+@media (min-width: 770px) {
+    #nombre, #apellido, #email, #mensaje{
+        min-width: 350px;
+    }
+
+    .contacInfo2 span{
+        margin-left: 50px;
+    }
+}
+
+@media (min-width: 1023px) {
+    #nombre, #apellido, #email, #mensaje{
+        min-width: 450px;
+    }
+}
