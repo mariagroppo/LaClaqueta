@@ -44,6 +44,23 @@
     margin: 10px;
 }
 
+.fraseDelDia{
+    display: flex;
+    flex-direction: row;
+}
+
+.fraseDelDia p {
+    font-size: small;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+
+.apiFrase{
+    font-style: italic;
+    font-size: smaller;
+    padding-left: 10px;
+}
+
 @media (min-width: 590px) {
     .contacInfo1_1{
         display: flex;
