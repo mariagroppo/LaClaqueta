@@ -3,5 +3,7 @@ Sitio Web de un cine de dos salas que proyecta clásicos nacionales e internacio
 reservar entradas, suscribirse al newsletter y obtener información de contacto.
 
 **Integrantes**
-1) Adrian Acevedo (DNI 37371680): Realizó la página contacto (HTML, JS y CSS relacionado).
-2) María Emilia Groppo (DNI 32423985): Realicé HTML, JS y CSS el resto: Home, barra de navegación, footer, cartelera e información de cada pelicula.
+1) Adrian Acevedo (DNI 37371680): Encargado de la página contacto (HTML, JS y CSS relacionado).
+2) María Emilia Groppo (DNI 32423985): Encargada del HTML, JS y CSS el resto: Home, barra de navegación, footer, cartelera e información de cada pelicula.
+
+El resto del equipo no participo.
